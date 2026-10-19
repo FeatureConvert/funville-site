@@ -11,3 +11,20 @@ h3 { font-weight: 900; font-size: 19px; margin: 18px 0 2px; }
 .meta { color: var(--soft); margin: 0 0 18px; }
 .lead { font-weight: 700; font-size: 20px; }
 a { color: #B03FC4; }
+
+/* Self-hosted fonts (SIL OFL 1.1, see fonts/OFL.txt). Latin subsets. */
+@font-face { font-family: 'Nunito'; font-style: normal; font-weight: 200 1000; font-display: swap;
+  src: url('fonts/Nunito-VF.woff2') format('woff2'); }
+@font-face { font-family: 'Lilita One'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url('fonts/LilitaOne-Regular.woff2') format('woff2'); }
+
+.skip { position: absolute; left: -9999px; }
+.skip:focus { left: 12px; top: 12px; background: var(--paper); padding: 8px 12px; border-radius: 10px; z-index: 5; }
+:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+.sitenav { margin: 0 0 14px; display: flex; flex-wrap: wrap; gap: 4px 6px; }
+.sitenav a { display: inline-block; min-height: 44px; line-height: 44px; padding: 0 10px; font-weight: 700; }
+.sitenav a[aria-current="page"] { color: var(--ink); text-decoration: none; }
+h1 { overflow-wrap: anywhere; }
+main { overflow-wrap: break-word; }
+.five { margin: 8px 0; padding-left: 24px; }
+.five li { margin: 8px 0; }
