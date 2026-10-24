@@ -5,22 +5,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Funville: Idle Adventure Park</title>
 <meta name="description" content="Funville is a cozy idle tycoon where a little mini golf course grows into a whole adventure park. No ads, ever.">
+<meta property="og:title" content="Funville: Idle Adventure Park">
+<meta property="og:description" content="A cozy idle tycoon where a little mini golf course grows into a whole adventure park. No ads, ever.">
+<meta property="og:image" content="https://featureconvert.github.io/funville-site/img/keyart.jpg">
 <link rel="icon" href="img/icon-256.png">
 <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="site.css">
 <style>
+  main { padding-top: 0; overflow: hidden; }
+  .keyart { display: block; width: calc(100% + 48px); margin: 0 -24px 18px; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
   .hero { display: flex; align-items: center; gap: 18px; margin-bottom: 4px; }
   .hero img { width: 96px; height: 96px; border-radius: 22px; box-shadow: 0 4px 12px rgba(51, 41, 77, .2); flex: none; }
   .hero h1 { margin: 0; }
   .hero .meta { margin: 4px 0 0; }
   .shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 18px 0 6px; }
+  .shots figure { margin: 0; }
   .shots img { width: 100%; height: auto; display: block; border-radius: 14px; box-shadow: 0 4px 12px rgba(51, 41, 77, .15); }
   @media (max-width: 560px) { .shots { grid-template-columns: repeat(2, 1fr); } .hero img { width: 72px; height: 72px; border-radius: 16px; } }
-  .status { font-weight: 900; font-size: 20px; margin: 18px 0 6px; }
+  ul { padding-left: 22px; margin: 6px 0; }
+  li { margin: 4px 0; }
+  .status { font-weight: 900; font-size: 20px; margin: 22px 0 4px; }
+  .links { margin-top: 18px; }
 </style>
 </head>
 <body>
 <main>
+<img class="keyart" src="img/keyart.jpg" width="1440" height="810" alt="A late Funville park: the nine-hole course in front, the town and its blocks beyond">
+
 <div class="hero">
   <img src="img/icon-256.png" alt="The Funville app icon" width="96" height="96">
   <div>
@@ -29,15 +40,23 @@
   </div>
 </div>
 
-<p class="lead">A little mini golf course grows, one block at a time, into a whole adventure park.</p>
-<p>Start with nine hand-shaped holes. What your golfers earn builds the park: a petting farm, an arcade, go-karts, Dino Land, a haunted graveyard, a steel roller coaster and a Space Port where the rocket really lifts off. Families wander the paths and cheer hole-in-ones, and your staff keep the park earning while you're away. There are no ads, ever, and nothing stops the game to ask you to watch a video.</p>
+<p class="lead">A little mini golf course grows, one block at a time, into a whole adventure park, and it keeps growing for weeks.</p>
+<p>Start with nine hand-shaped holes. What your golfers earn buys the blocks across the street: a Petting Farm, an Arcade, go-karts, Dino Land, a Haunted Graveyard that comes alive after dark, a Space Port where the rocket really lifts off, and many more down the road, all the way to a Harbor where cargo ships sail in. Your staff keep the park earning while you're away. There are no ads, ever, and nothing stops the game to ask you to watch a video.</p>
 
 <div class="shots">
-  <img src="img/shot-01.jpg" width="416" height="900" alt="The park at golden hour: the course in front, the blocks across the street">
-  <img src="img/shot-03.jpg" width="416" height="900" alt="Earns while you're away: the welcome-back Gazette">
-  <img src="img/shot-05.jpg" width="416" height="900" alt="The Haunted Graveyard after dark">
-  <img src="img/shot-07.jpg" width="416" height="900" alt="Events all year">
+  <figure><img src="img/shot11-01.jpg" width="416" height="904" alt="The course in front, the town and the blocks beyond"></figure>
+  <figure><img src="img/shot11-02.jpg" width="416" height="904" alt="Putt of the Day: pull back and let go to putt a hole by hand"></figure>
+  <figure><img src="img/shot11-04.jpg" width="416" height="904" alt="Glow Putt: a blacklight hall with neon rails and glowing holes"></figure>
+  <figure><img src="img/shot11-07.jpg" width="416" height="904" alt="Splash Aquarium: open-air tanks and a fish show"></figure>
 </div>
+
+<h2>What's inside</h2>
+<ul>
+  <li>Nine mini golf holes with windmills, water and bridges, and a Glow Putt hall with nine more</li>
+  <li>Putt of the Day to play by hand, and the Weekly Open to try for the best score of the week</li>
+  <li>Blocks to buy and run, from bumper cars and a drop tower to a chairlift Sky Glider and a Safari Tram</li>
+  <li>Franchise to a new town when your park is done, and start again bigger</li>
+</ul>
 
 <p class="status">Coming soon to the App Store</p>
 <!-- When the game is live, replace the line above with the App Store badge:
@@ -45,7 +64,7 @@
 -->
 <p>For iPhone, iPad and Apple silicon Macs. Free, with no ads.</p>
 
-<p><a href="support.html">Support</a> · <a href="press.html">Press kit</a> · <a href="privacy.html">Privacy policy</a></p>
+<p class="links"><a href="support.html">Support</a> · <a href="press.html">Press kit</a> · <a href="privacy.html">Privacy policy</a></p>
 </main>
 </body>
 </html>
