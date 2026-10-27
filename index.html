@@ -5,66 +5,247 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Funville: Idle Adventure Park</title>
 <meta name="description" content="Funville is a cozy idle tycoon where a little mini golf course grows into a whole adventure park. No ads, ever.">
+<meta name="theme-color" content="#CDEBF7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1E1A33" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Funville">
 <meta property="og:title" content="Funville: Idle Adventure Park">
-<meta property="og:description" content="A cozy idle tycoon where a little mini golf course grows into a whole adventure park. No ads, ever.">
+<meta property="og:description" content="Funville is a cozy idle tycoon where a little mini golf course grows into a whole adventure park. No ads, ever.">
+<meta property="og:url" content="https://featureconvert.github.io/funville-site/">
 <meta property="og:image" content="https://featureconvert.github.io/funville-site/img/keyart.jpg">
-<link rel="icon" href="img/icon-256.png">
-<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+<meta property="og:image:width" content="1440">
+<meta property="og:image:height" content="810">
+<meta property="og:image:alt" content="A grown Funville park from above, with blocks of rides along the streets">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Funville: Idle Adventure Park">
+<meta name="twitter:description" content="Funville is a cozy idle tycoon where a little mini golf course grows into a whole adventure park. No ads, ever.">
+<meta name="twitter:image" content="https://featureconvert.github.io/funville-site/img/keyart.jpg">
+<link rel="icon" href="img/favicon-64.png" type="image/png">
+<link rel="icon" href="img/favicon-dark-64.png" type="image/png" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/LilitaOne-Regular.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="site.css">
-<style>
-  main { padding-top: 0; overflow: hidden; }
-  .keyart { display: block; width: calc(100% + 48px); margin: 0 -24px 18px; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
-  .hero { display: flex; align-items: center; gap: 18px; margin-bottom: 4px; }
-  .hero img { width: 96px; height: 96px; border-radius: 22px; box-shadow: 0 4px 12px rgba(51, 41, 77, .2); flex: none; }
-  .hero h1 { margin: 0; }
-  .hero .meta { margin: 4px 0 0; }
-  .shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 18px 0 6px; }
-  .shots figure { margin: 0; }
-  .shots img { width: 100%; height: auto; display: block; border-radius: 14px; box-shadow: 0 4px 12px rgba(51, 41, 77, .15); }
-  @media (max-width: 560px) { .shots { grid-template-columns: repeat(2, 1fr); } .hero img { width: 72px; height: 72px; border-radius: 16px; } }
-  ul { padding-left: 22px; margin: 6px 0; }
-  li { margin: 4px 0; }
-  .status { font-weight: 900; font-size: 20px; margin: 22px 0 4px; }
-  .links { margin-top: 18px; }
-</style>
+<script src="site.js"></script>
 </head>
 <body>
-<main>
-<img class="keyart" src="img/keyart.jpg" width="1440" height="810" alt="A late Funville park: the nine-hole course in front, the town and its blocks beyond">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <picture><source srcset="img/icon-dark-128.png" media="(prefers-color-scheme: dark)"><img src="img/icon-128.png" alt="" width="40" height="40"></picture>
+      Funville
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+  <ul>
+    <li><a href="index.html" aria-current="page">Home</a></li>
+    <li><a href="game.html">Game</a></li>
+    <li><a href="attractions.html">Attractions</a></li>
+    <li><a href="updates.html">Updates</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="press.html">Press</a></li>
+  </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
 
-<div class="hero">
-  <img src="img/icon-256.png" alt="The Funville app icon" width="96" height="96">
-  <div>
-    <h1>Funville</h1>
-    <p class="meta">Funville: Idle Adventure Park · a cozy idle tycoon with no ads, ever.</p>
+<div class="sky hero-sky">
+  <span class="cloud c1" aria-hidden="true"></span>
+  <span class="cloud c2" aria-hidden="true"></span>
+  <div class="hero wrap">
+    <h1 class="wordmark">Funville</h1>
+    <p><span class="pill">Idle Adventure Park</span></p>
+    <p class="pitch">A cozy idle tycoon where a little mini golf course grows into a whole adventure park, and it keeps growing for weeks.</p>
+    <div class="cta-row">
+      <!-- APP STORE: when Funville is live, replace the span below with Apple's badge, linked to the App Store page:
+           <a href="APP-STORE-URL"><img src="img/app-store-badge.svg" alt="Download on the App Store" width="160" height="54"></a>
+           Do the same in the "Get Funville" section further down this page and in the footer line of every page. -->
+      <span class="store-soon">Coming soon<span>to the App Store</span></span>
+      <a class="btn gold" href="media.html#trailer">Watch the trailer</a>
+    </div>
+  </div>
+  <div class="hero-art">
+    <img src="img/hero-1600.jpg" srcset="img/hero-1000.jpg 1000w, img/hero-1600.jpg 1600w" sizes="(max-width: 1150px) 100vw, 1120px" width="1600" height="900" fetchpriority="high"
+      alt="A grown Funville park from above: blocks of rides along the streets, a roller coaster, a dinosaur jungle, a Glow Putt hall under blacklight and the town's houses all around">
   </div>
 </div>
 
-<p class="lead">A little mini golf course grows, one block at a time, into a whole adventure park, and it keeps growing for weeks.</p>
-<p>Start with nine hand-shaped holes. What your golfers earn buys the blocks across the street: a Petting Farm, an Arcade, go-karts, Dino Land, a Haunted Graveyard that comes alive after dark, a Space Port where the rocket really lifts off, and many more down the road, all the way to a Harbor where cargo ships sail in. Your staff keep the park earning while you're away. There are no ads, ever, and nothing stops the game to ask you to watch a video.</p>
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <h2>A mini golf park <span class="pop">that grows with you</span></h2>
+      <p>Start small. Every round your golfers play earns a little money, and that money builds the park.</p>
+    </div>
+    <ol class="steps">
+      <li><b>Nine holes to start</b>Nine hand-shaped mini golf holes, with windmills, water and bridges. Tap a hole to start a round.</li>
+      <li><b>Blocks across the street</b>Buy the lots across the street for new venues: a Petting Farm, an Arcade, a Pond, Go-Karts, Dino Land and many more.</li>
+      <li><b>A town around your park</b>The empty land past your blocks grows into the town of Funville, with a water tower that says FUNVILLE.</li>
+      <li><b>Franchise to new towns</b>When your park is grown, move to a new town for Stars that stay with you, and build again.</li>
+    </ol>
+  </div>
+</section>
 
-<div class="shots">
-  <figure><img src="img/shot11-01.jpg" width="416" height="904" alt="The course in front, the town and the blocks beyond"></figure>
-  <figure><img src="img/shot11-02.jpg" width="416" height="904" alt="Putt of the Day: pull back and let go to putt a hole by hand"></figure>
-  <figure><img src="img/shot11-04.jpg" width="416" height="904" alt="Glow Putt: a blacklight hall with neon rails and glowing holes"></figure>
-  <figure><img src="img/shot11-07.jpg" width="416" height="904" alt="Splash Aquarium: open-air tanks and a fish show"></figure>
-</div>
+<section class="band" aria-labelledby="look">
+  <div class="section-head wrap">
+    <h2 id="look">Take a look</h2>
+    <p>Real screenshots from the game. Swipe or scroll the row to see them all.</p>
+  </div>
+  <div class="strip" tabindex="0" role="region" aria-label="Screenshots, scrolls sideways">
+    <figure><img src="img/store/shot-01.jpg" width="416" height="904" loading="lazy" alt="A mini golf park that grows with you: the course in front, the town and the blocks beyond"></figure>
+    <figure><img src="img/store/shot-02.jpg" width="416" height="904" loading="lazy" alt="Putt of the Day: pull back and let go to putt a hole by hand"></figure>
+    <figure><img src="img/store/shot-03.jpg" width="416" height="904" loading="lazy" alt="The Fun Yard: a drop tower, bumper cars and a Bounce Barn"></figure>
+    <figure><img src="img/store/shot-04.jpg" width="416" height="904" loading="lazy" alt="Glow Putt: a blacklight hall with neon rails and glowing holes"></figure>
+    <figure><img src="img/store/shot-05.jpg" width="416" height="904" loading="lazy" alt="Gold Rush Gulch: a mine train, a saloon and a panning creek"></figure>
+    <figure><img src="img/store/shot-06.jpg" width="416" height="904" loading="lazy" alt="Toy Town: a toy railway, a brick builder and a giant playroom"></figure>
+    <figure><img src="img/store/shot-07.jpg" width="416" height="904" loading="lazy" alt="Splash Aquarium: open-air tanks and a fish show"></figure>
+    <figure><img src="img/store/shot-08.jpg" width="416" height="904" loading="lazy" alt="The Candy Factory and Marble Mania, seen from above"></figure>
+    <figure><img src="img/store/shot-09.jpg" width="416" height="904" loading="lazy" alt="The Weekly Open: the finished scorecard"></figure>
+    <figure><img src="img/store/shot-10.jpg" width="416" height="904" loading="lazy" alt="The Haunted Graveyard after dark"></figure>
+  </div>
+  <p class="more"><a class="btn plain" href="media.html">More screenshots and the trailer</a></p>
+</section>
 
-<h2>What's inside</h2>
-<ul>
-  <li>Nine mini golf holes with windmills, water and bridges, and a Glow Putt hall with nine more</li>
-  <li>Putt of the Day to play by hand, and the Weekly Open to try for the best score of the week</li>
-  <li>Blocks to buy and run, from bumper cars and a drop tower to a chairlift Sky Glider and a Safari Tram</li>
-  <li>Franchise to a new town when your park is done, and start again bigger</li>
-</ul>
+<section>
+  <div class="wrap">
+    <div class="feature">
+      <img src="img/shots/fun-yard.jpg" width="960" height="720" loading="lazy" alt="The Fun Yard: bumper cars on a dark floor, a tall red drop tower, a red barn and a bouncy castle">
+      <div>
+        <h2>Tap the <span class="pop">park</span></h2>
+        <p>Everything happens in the park itself. Tap a hole to start a round and tap a ride to run it. Hire Marshals and staff, and your park keeps earning while you're away.</p>
+        <p>Twenty-three blocks have a Block Desk at the gate, where one tap runs every ride that is waiting. Press and hold a Marshal to give them a name.</p>
+        <p><a href="game.html#tap">How the park works</a></p>
+      </div>
+    </div>
+    <div class="feature flip">
+      <img src="img/shots/putt-of-the-day.jpg" width="960" height="720" loading="lazy" alt="Putt of the Day: a single green hole seen from above, with an arrow showing the aim and a power reading">
+      <div>
+        <h2>Putt it <span class="pop">yourself</span></h2>
+        <p><b>Putt of the Day</b> is a new hole every day, the same for everyone. Touch anywhere, pull back and let go.</p>
+        <p><b>The Weekly Open</b> is nine holes a week, one round that counts, with medals and a scorecard to share.</p>
+        <p>The ball really rolls: it bounces off the walls, climbs the ramps and lips out when it's hit too hard.</p>
+        <p><a href="game.html#putt">More about putting</a></p>
+      </div>
+    </div>
+    <div class="feature">
+      <img src="img/shots/haunted-graveyard.jpg" width="960" height="720" loading="lazy" alt="The Haunted Graveyard at night: lamps glowing over gravestones, bare trees and a crypt">
+      <div>
+        <h2>Watch it <span class="pop">come alive</span></h2>
+        <p>Families wander the paths and line up for rides, and a hole-in-one gets a cheer. Day turns to golden dusk and lantern-lit night, and the Haunted Graveyard comes alive after dark.</p>
+        <p>Passing rain showers pop the umbrellas, then a rainbow comes out. Critters drop by while you're away.</p>
+        <p><a href="game.html#life">Life in the park</a></p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<p class="status">Coming soon to the App Store</p>
-<!-- When the game is live, replace the line above with the App Store badge:
-<a href="APP-STORE-URL"><img src="img/app-store-badge.svg" alt="Download on the App Store"></a>
--->
-<p>For iPhone, iPad and Apple silicon Macs. Free, with no ads.</p>
+<section class="band">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Twenty-six blocks <span class="pop">to open</span></h2>
+      <p>Each block across the street is a new venue with rides of its own. Here are a few.</p>
+    </div>
+    <div class="grid">
+      <a class="card" href="attractions.html#gold-rush-gulch">
+        <img src="img/shots/gold-rush-gulch.jpg" width="960" height="720" loading="lazy" alt="Gold Rush Gulch: a mine train on wooden tracks, a saloon and a blue panning creek">
+        <div class="body"><h3>Gold Rush Gulch</h3><p>A Wild West mining camp with a Mine Train through the hill.</p></div>
+      </a>
+      <a class="card" href="attractions.html#toy-town">
+        <img src="img/shots/toy-town.jpg" width="960" height="720" loading="lazy" alt="Toy Town: a tower of toy bricks, a toy train, letter blocks and a giant board-game floor">
+        <div class="body"><h3>Toy Town</h3><p>A giant playroom come to life, with a Toy Train round the room.</p></div>
+      </a>
+      <a class="card" href="attractions.html#splash-aquarium">
+        <img src="img/shots/splash-aquarium.jpg" width="960" height="720" loading="lazy" alt="Splash Aquarium: seals in a show pool, a glass shark tunnel and a reef tank">
+        <div class="body"><h3>Splash Aquarium</h3><p>Open-air tanks, a Seal Show and a Shark Tunnel to walk through.</p></div>
+      </a>
+    </div>
+    <p class="more"><a class="btn" href="attractions.html">See every attraction</a></p>
+  </div>
+</section>
 
-<p class="links"><a href="support.html">Support</a> · <a href="press.html">Press kit</a> · <a href="privacy.html">Privacy policy</a></p>
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Franchise to <span class="pop">new towns</span></h2>
+      <p>When your park is grown, sell it and open in a new town. Your Stars, gems, Collection Book and Looks come with you.</p>
+    </div>
+    <div class="towns">
+      <div class="town maple"><span class="tag">Where it starts</span><h3>Maple Grove</h3><p>Autumn trees, and farm fields out past the town.</p></div>
+      <div class="town sunny"><span class="tag">Beach crowds</span><h3>Sunny Shores</h3><p>Palm trees and sand, and the Snack Bar does a roaring trade.</p></div>
+      <div class="town snowy"><span class="tag">Icy greens</span><h3>Snowy Peaks</h3><p>Snowy pines and sleds, and Santa hats on the T-Rex and the cows.</p></div>
+      <div class="town canyon"><span class="tag">Desert heat</span><h3>Canyon Springs</h3><p>Cacti round the park, and everything earns more in the desert heat.</p></div>
+    </div>
+    <p class="more"><a href="game.html#towns">More about the towns</a></p>
+  </div>
+</section>
+
+<section class="sky promise" aria-labelledby="promise">
+  <div class="narrow">
+    <h2 class="big" id="promise">No ads, ever.</h2>
+    <p class="lead">Funville is free and fair. Nothing stops the game to ask you to watch a video.</p>
+    <ul class="ticks">
+      <li>The free Boost charges as you play. No video needed.</li>
+      <li>No loot boxes, no spins, no random paid items.</li>
+      <li>No pop-up offers. Everything in the Shop is there whenever you want it.</li>
+      <li>The VIP Pass is a one-time purchase, never a subscription.</li>
+      <li>The Weekly Cup is real players only: no bots.</li>
+      <li>No account needed.</li>
+    </ul>
+  </div>
+</section>
+
+<section aria-labelledby="get">
+  <div class="narrow center">
+    <h2 id="get">Get Funville</h2>
+    <p>For iPhone, iPad and Apple silicon Macs. Free, with no ads.</p>
+    <div class="cta-row">
+      <!-- APP STORE: replace this span with the App Store badge link too (see the note at the top of this page). -->
+      <span class="store-soon">Coming soon<span>to the App Store</span></span>
+    </div>
+    <p class="more"><a href="support.html">Support</a> · <a href="press.html">Press kit</a> · <a href="privacy.html">Privacy policy</a> · <a href="rules.html">Park names and fair play</a></p>
+  </div>
+</section>
+
 </main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-brand">Funville</p>
+        <p>Idle Adventure Park. A cozy idle tycoon with no ads, ever.</p>
+        <!-- APP STORE: when Funville is live, change this line to a link to its App Store page. -->
+        <p>Coming soon to the App Store for iPhone, iPad and Apple silicon Macs.</p>
+      </div>
+      <nav aria-label="The game">
+        <h2>The game</h2>
+        <ul>
+          <li><a href="game.html">How it plays</a></li>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="updates.html">Updates</a></li>
+          <li><a href="media.html">Screenshots and trailer</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Help">
+        <h2>Help</h2>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="rules.html">Park names and fair play</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Studio">
+        <h2>Studio</h2>
+        <ul>
+          <li><a href="about.html">About the developer</a></li>
+          <li><a href="press.html">Press kit</a></li>
+          <li><a href="mailto:Nexrax@icloud.com">Nexrax@icloud.com</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="small">Made by Nexrax, a one-person studio. Set in Lilita One and Nunito, both under the SIL Open Font License (<a href="fonts/OFL.txt">licence</a>).</p>
+  </div>
+</footer>
 </body>
 </html>

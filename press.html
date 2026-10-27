@@ -4,23 +4,54 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Funville Press Kit</title>
-<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+<meta name="description" content="Funville press kit: fact sheet, descriptions, trailer, screenshots, logo, icon and key art.">
+<meta name="theme-color" content="#CDEBF7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1E1A33" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Funville">
+<meta property="og:title" content="Funville Press Kit">
+<meta property="og:description" content="Funville press kit: fact sheet, descriptions, trailer, screenshots, logo, icon and key art.">
+<meta property="og:url" content="https://featureconvert.github.io/funville-site/press.html">
+<meta property="og:image" content="https://featureconvert.github.io/funville-site/img/keyart.jpg">
+<meta property="og:image:width" content="1440">
+<meta property="og:image:height" content="810">
+<meta property="og:image:alt" content="A grown Funville park from above, with blocks of rides along the streets">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Funville Press Kit">
+<meta name="twitter:description" content="Funville press kit: fact sheet, descriptions, trailer, screenshots, logo, icon and key art.">
+<meta name="twitter:image" content="https://featureconvert.github.io/funville-site/img/keyart.jpg">
+<link rel="icon" href="img/favicon-64.png" type="image/png">
+<link rel="icon" href="img/favicon-dark-64.png" type="image/png" media="(prefers-color-scheme: dark)">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preload" href="fonts/LilitaOne-Regular.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="site.css">
-<style>
-  .facts { display: grid; grid-template-columns: max-content 1fr; gap: 6px 18px; margin: 8px 0 0; }
-  .facts dt { font-weight: 900; }
-  .facts dd { margin: 0; }
-  .shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin: 12px 0 6px; }
-  .shots img { width: 100%; border-radius: 14px; box-shadow: 0 4px 12px rgba(51, 41, 77, .15); }
-  @media (max-width: 560px) { .shots { grid-template-columns: repeat(2, 1fr); } .facts { grid-template-columns: 1fr; gap: 0; } .facts dd { margin-bottom: 8px; } }
-  .wide { width: 100%; border-radius: 16px; display: block; margin: 12px 0 6px; }
-  .dl { font-weight: 700; }
-  ul { padding-left: 22px; }
-  li { margin: 4px 0; }
-</style>
+<script src="site.js"></script>
 </head>
 <body>
-<main>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <picture><source srcset="img/icon-dark-128.png" media="(prefers-color-scheme: dark)"><img src="img/icon-128.png" alt="" width="40" height="40"></picture>
+      Funville
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="game.html">Game</a></li>
+    <li><a href="attractions.html">Attractions</a></li>
+    <li><a href="updates.html">Updates</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="support.html">Support</a></li>
+    <li><a href="press.html" aria-current="page">Press</a></li>
+  </ul>
+    </nav>
+  </div>
+</header>
+<main id="main" class="doc-page">
+<div class="narrow">
+<article class="doc">
 <h1>Funville Press Kit</h1>
 <p class="meta">Funville: Idle Adventure Park · a cozy idle tycoon with no ads, ever.</p>
 
@@ -48,26 +79,26 @@
 <p>Funville is free and fair: no ads, no loot boxes, no pop-ups asking you to pay. The free Boost charges as you play, then gives 5x earnings for 5 minutes, no video needed. An optional VIP Pass, a one-time Welcome Pack and gem packs are there for players who want to support the game.</p>
 
 <h2>Trailer</h2>
-<video class="wide" controls preload="metadata" poster="press/keyart.jpg" src="press/funville_trailer.mp4"></video>
+<div class="video"><video controls preload="none" playsinline poster="press/keyart.jpg" src="press/funville_trailer.mp4" aria-label="Funville trailer, 50 seconds"></video></div>
 <p><a class="dl" href="press/funville_trailer.mp4" download>Download the trailer</a> (MP4, 1920 x 1080, 50 seconds, 54 MB)</p>
 
 <h2>Screenshots</h2>
 <div class="shots">
-  <img src="press/shot-01.png" alt="A mini golf park that grows with you: the course in front, the town and the blocks beyond">
-  <img src="press/shot-02.png" alt="Putt of the Day: pull back and let go to putt a hole by hand">
-  <img src="press/shot-03.png" alt="The Fun Yard: a drop tower, bumper cars and a Bounce Barn">
-  <img src="press/shot-04.png" alt="Glow Putt: a blacklight hall with neon rails and glowing holes">
-  <img src="press/shot-05.png" alt="Gold Rush Gulch: a mine train, a saloon and a panning creek">
-  <img src="press/shot-06.png" alt="Toy Town: a toy railway, a brick builder and a giant playroom">
-  <img src="press/shot-07.png" alt="Splash Aquarium: open-air tanks and a fish show">
-  <img src="press/shot-08.png" alt="The Candy Factory and Marble Mania, seen from above">
-  <img src="press/shot-09.png" alt="The Weekly Open: the finished scorecard">
-  <img src="press/shot-10.png" alt="The Haunted Graveyard after dark">
+  <img src="press/shot-01.png" width="416" height="904" loading="lazy" alt="A mini golf park that grows with you: the course in front, the town and the blocks beyond">
+  <img src="press/shot-02.png" width="416" height="904" loading="lazy" alt="Putt of the Day: pull back and let go to putt a hole by hand">
+  <img src="press/shot-03.png" width="416" height="904" loading="lazy" alt="The Fun Yard: a drop tower, bumper cars and a Bounce Barn">
+  <img src="press/shot-04.png" width="416" height="904" loading="lazy" alt="Glow Putt: a blacklight hall with neon rails and glowing holes">
+  <img src="press/shot-05.png" width="416" height="904" loading="lazy" alt="Gold Rush Gulch: a mine train, a saloon and a panning creek">
+  <img src="press/shot-06.png" width="416" height="904" loading="lazy" alt="Toy Town: a toy railway, a brick builder and a giant playroom">
+  <img src="press/shot-07.png" width="416" height="904" loading="lazy" alt="Splash Aquarium: open-air tanks and a fish show">
+  <img src="press/shot-08.png" width="416" height="904" loading="lazy" alt="The Candy Factory and Marble Mania, seen from above">
+  <img src="press/shot-09.png" width="416" height="904" loading="lazy" alt="The Weekly Open: the finished scorecard">
+  <img src="press/shot-10.png" width="416" height="904" loading="lazy" alt="The Haunted Graveyard after dark">
 </div>
 <p><a class="dl" href="press/funville_screenshots.zip" download>Download all screenshots</a> (ZIP, 10 iPhone and 10 iPad, 35 MB)</p>
 
 <h2>Logo, icon and key art</h2>
-<img class="wide" src="press/banner.jpg" alt="Funville banner">
+<img class="wide" src="press/banner.jpg" width="1600" height="516" loading="lazy" alt="Funville banner">
 <p><a class="dl" href="press/funville_art.zip" download>Download the art</a> (ZIP, 6.9 MB): key art at 3840 x 2160, a wide banner, the logo and the 1024 px app icon.</p>
 
 <h2>Features</h2>
@@ -86,12 +117,53 @@
 <p>Putt of the Day, a new hole every day that you putt by hand; the Weekly Open, nine holes a week with medals and a scorecard to share; a ball that really rolls, bounces and lips out; Glow Putt, nine more holes under blacklight; a town that grows around your park; and sixteen new blocks, from a skate park and an aquarium to a Dodgeball Dome and Laser Tag.</p>
 
 <h2>About the developer</h2>
-<p>Funville is made by one person, Nexrax, in the Godot 4 engine, with 3D art from CC0 and royalty-free asset kits (Kenney, Quaternius and others). The code was built with AI coding assistance, and park names are checked by an AI safety service. It began as a nine-hole course and grew a block at a time. The rule from the first day: no ads, ever.</p>
+<p>Funville is made by one person, Nexrax, in the Godot 4 engine, with 3D art from CC0 and royalty-free asset kits (Kenney, Quaternius and others). The code was built with AI coding assistance, and park names are checked by an AI safety service. It began as a nine-hole course and grew a block at a time. The rule from the first day: no ads, ever. Full credits are on the <a href="about.html#credits">About page</a>.</p>
 
 <h2>Contact</h2>
 <p>Email <a href="mailto:Nexrax@icloud.com">Nexrax@icloud.com</a>. Writing a review or making a video? Ask for a VIP Pass code and you'll see everything the game has.</p>
 
-<p><a href="index.html">Home</a> · <a href="support.html">Support</a> · <a href="privacy.html">Privacy policy</a></p>
+<p><a href="index.html">Home</a> · <a href="media.html">Screenshots and trailer</a> · <a href="support.html">Support</a> · <a href="privacy.html">Privacy policy</a></p>
+</article>
+</div>
 </main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <p class="foot-brand">Funville</p>
+        <p>Idle Adventure Park. A cozy idle tycoon with no ads, ever.</p>
+        <!-- APP STORE: when Funville is live, change this line to a link to its App Store page. -->
+        <p>Coming soon to the App Store for iPhone, iPad and Apple silicon Macs.</p>
+      </div>
+      <nav aria-label="The game">
+        <h2>The game</h2>
+        <ul>
+          <li><a href="game.html">How it plays</a></li>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="updates.html">Updates</a></li>
+          <li><a href="media.html">Screenshots and trailer</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Help">
+        <h2>Help</h2>
+        <ul>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="rules.html">Park names and fair play</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Studio">
+        <h2>Studio</h2>
+        <ul>
+          <li><a href="about.html">About the developer</a></li>
+          <li><a href="press.html">Press kit</a></li>
+          <li><a href="mailto:Nexrax@icloud.com">Nexrax@icloud.com</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="small">Made by Nexrax, a one-person studio. Set in Lilita One and Nunito, both under the SIL Open Font License (<a href="fonts/OFL.txt">licence</a>).</p>
+  </div>
+</footer>
 </body>
 </html>
