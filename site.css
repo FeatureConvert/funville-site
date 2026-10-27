@@ -106,6 +106,9 @@ li { margin: .3em 0; }
 .store-soon { display: inline-flex; flex-direction: column; justify-content: center; text-align: left; min-height: 54px; padding: 8px 20px; border-radius: 14px; background: #332B4D; color: #FCFAFF; font: 900 12px/1.2 var(--heavy); letter-spacing: .08em; text-transform: uppercase; }
 .store-soon span { font: 400 21px/1.15 var(--display); letter-spacing: .01em; text-transform: none; }
 @media (prefers-color-scheme: dark) { .store-soon { background: #FCFAFF; color: #332B4D; } }
+a.store-soon { text-decoration: none; transition: transform .15s ease; }
+a.store-soon:hover, a.store-soon:focus-visible { transform: translateY(-2px); }
+a.store-soon span { text-decoration: none; }
 .cta-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; justify-content: center; margin: 24px 0 0; }
 
 .pill { display: inline-block; padding: 7px 18px; border-radius: 999px; background: #332B4D; color: #FCFAFF; font: 900 15px/1.2 var(--heavy); letter-spacing: .08em; text-transform: uppercase; }

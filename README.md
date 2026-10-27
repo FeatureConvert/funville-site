@@ -28,11 +28,13 @@ Never rename or remove `index.html`, `privacy.html`, `support.html`, `rules.html
 
 The pages share the same header and footer. When you change one, change it on every page.
 
-## When the game is on the App Store
+## The App Store link
 
-Search the pages for `APP STORE:`. Each comment says what to swap: the "Coming soon to the App Store" badge on the
-home page (twice) and the footer line on every page. Apple's badge artwork comes from Apple's marketing site; save it
-as `img/app-store-badge.svg`.
+Funville is live (1.0, October 2026): https://apps.apple.com/app/funville-idle-adventure-park/id6816280683. The home page
+links it twice (the hero and "Get Funville", a `store-soon`-styled "Download on the App Store" button), every footer
+links it, and the press kit's fact sheet lists it. Apple's official badge is not in the repo yet (it has to be downloaded
+from Apple's marketing site, with Robert's OK): save it as `img/app-store-badge.svg` and swap it into the two home-page
+buttons.
 
 ## Check before pushing
 
