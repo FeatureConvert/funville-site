@@ -77,10 +77,11 @@ def main():
             if u.scheme in ("http", "https", "mailto", "tel", "data") or ref.startswith("//"):
                 continue
             count += 1
-            if ref.startswith("/"):
+            if ref.startswith("/") and not (name == "404.html" and (ROOT / "CNAME").is_file()):
                 errors.append(f"{name}: root-relative link {ref!r} (use a relative link)")
                 continue
-            target = name if not u.path else urllib.parse.unquote(u.path)
+            # (On a domain, the CNAME file, the site is at the root, so the 404 page links from "/" to stay styled at any depth.)
+            target = name if not u.path else urllib.parse.unquote(u.path).lstrip("/")
             tpath = (ROOT / target)
             if not tpath.is_file():
                 errors.append(f"{name}: missing file {ref!r}")
