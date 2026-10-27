@@ -31,10 +31,9 @@ The pages share the same header and footer. When you change one, change it on ev
 ## The App Store link
 
 Funville is live (1.0, October 2026): https://apps.apple.com/app/funville-idle-adventure-park/id6816280683. The home page
-links it twice (the hero and "Get Funville", a `store-soon`-styled "Download on the App Store" button), every footer
-links it, and the press kit's fact sheet lists it. Apple's official badge is not in the repo yet (it has to be downloaded
-from Apple's marketing site, with Robert's OK): save it as `img/app-store-badge.svg` and swap it into the two home-page
-buttons.
+links it twice (the hero and "Get Funville") with Apple's official black "Download on the App Store" badge
+(`img/app-store-badge.svg`, from toolbox.marketingtools.apple.com, 2026-10-27, with Robert's OK; show it as supplied),
+every footer links it, and the press kit's fact sheet lists it.
 
 ## Check before pushing
 
