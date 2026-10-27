@@ -43,6 +43,10 @@ python3 -m http.server 8000       # then open http://localhost:8000/
 
 ## Moving to a domain
 
+The domain is **playfunville.com** (Robert, 2026-10-26): the `CNAME` file, the absolute addresses (step 4) and the
+404 page's root links (step 6) are done on the branch that adds `CNAME`. Push it only after the domain's DNS records
+resolve, or the old github.io links (App Store Connect, the game) would redirect to a domain that does not answer yet.
+
 All links are relative, so the site works at any address.
 
 1. Buy the domain, and in its DNS add the records GitHub lists under "Managing a custom domain for your GitHub
